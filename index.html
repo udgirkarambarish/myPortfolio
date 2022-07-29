@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
-</head>
-<body>
-    <h1> Ishan's component library</h1>
-    <p>I am attending neogcamp and I want to make a  library which would make all my projects look good and consistent.</p>
 
-    <hr >
+    <!--CSS Way1 style tag 
+
+     <style>
+        body {
+
+             color : red;
+
+        }
+    </style> -->
+
+    <!-- Third way of doing CSS : External link -->
+    <link href="styles.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <h1 id="lib-header"> Ishan's component library</h1>
+    <!-- style="color:aqua" -->
+    <p class="para">I am attending neogcamp and I want to make a library which would make all my projects look good and consistent.
+    </p>
+
+    <hr>
 
     <h2>@typography</h2>
 
@@ -24,7 +43,7 @@
     <h2>@container</h2>
 
     <h3>fluid container</h3>
-    <div>This is the fluid container and it will go till the end of the page</div>
+    <div class="para">This is the fluid container and it will go till the end of the page</div>
 
     <h3>center container</h3>
     <div>This is a centered container and it will go till the specified width</div>
@@ -66,23 +85,23 @@
         <li>Inline item one</li>
         <li>Inline item two</li>
         <li>Inline item three</li>
-     </ul>
+    </ul>
 
-     <h3>reverse ordered list</h3>
+    <h3>reverse ordered list</h3>
 
-     <ol>
+    <ol>
         <li>milk</li>
         <li>eggs</li>
         <li>bread</li>
-     </ol>
+    </ol>
 
 
-     <hr>
+    <hr>
 
 
-     <h2>@nav</h2>
+    <h2>@nav</h2>
 
-     <nav>
+    <nav>
         <div>IamBrand</div>
         <ul>
             <li>
@@ -95,35 +114,35 @@
                 <a href="/">about</a>
             </li>
         </ul>
-     </nav>
+    </nav>
 
 
-     <hr>
+    <hr>
 
 
-     <h2>header</h2>
+    <h2>header</h2>
 
-     <header>
+    <header>
         <img src="images/hero.svg" />
         <h1>heading inside hero</h1>
-     </header>
+    </header>
 
 
 
-     <hr>
+    <hr>
 
 
 
-     <h2>@Section</h2>
-     <section>
+    <h2>@Section</h2>
+    <section>
         <h3>White section</h3>
         <p>This will have white background</p>
-     </section>
+    </section>
 
-     <section>
+    <section>
         <h3>Offwhite section</h3>
         <p>This will have gray background</p>
-     </section>
+    </section>
 
 
     <hr>
@@ -133,40 +152,20 @@
 
 
 
-     <footer>
+    <footer>
         <div>Some small heading inside footer</div>
         <ul>
             <li>SocialOne</li>
             <li>SocialTwo</li>
             <li>SocialThree</li>
         </ul>
-     </footer>
+    </footer>
 
 
 
 
 
 
-
-
-
-    
-
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
-
-    
 </body>
+
 </html>
