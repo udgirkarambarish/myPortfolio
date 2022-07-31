@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
 
-  
+
     <link href="styles.css" rel="stylesheet" />
 
 
 </head>
 
 <body>
-    <h1 > Ishan's component library</h1>
-    
+    <h1> Ishan's component library</h1>
+
     <p>I am attending neogcamp and I want to make a library which would make all my projects look good and consistent.
     </p>
 
@@ -34,7 +34,7 @@
     <h2>@container</h2>
 
     <h3>fluid container</h3>
-    <div class="container" >This is the fluid container and it will go till the end of the page</div>
+    <div class="container">This is the fluid container and it will go till the end of the page</div>
 
     <h3>center container</h3>
     <div class="container container-center">This is a centered container and it will go till the specified width</div>
@@ -67,9 +67,9 @@
     <h3>unordered inline list</h3>
 
     <ul class="list-non-bullet">
-         <li class="list-item-inline">Inline item one</li>
-         <li class="list-item-inline">Inline item two</li>
-         <li class="list-item-inline">Inline item three</li>
+        <li class="list-item-inline">Inline item one</li>
+        <li class="list-item-inline">Inline item two</li>
+        <li class="list-item-inline">Inline item three</li>
     </ul>
 
     <h3>reverse ordered list</h3>
@@ -90,13 +90,13 @@
         <div class="nav-brand">IamBrand</div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
-                 <a class="link link-active" href="/">home</a>
+                <a class="link link-active" href="/">home</a>
             </li>
             <li class="list-item-inline">
-                 <a class="link" href="/">products</a>
+                <a class="link" href="/">products</a>
             </li>
             <li class="list-item-inline">
-                 <a class="link" href="/">about</a>
+                <a class="link" href="/">about</a>
             </li>
         </ul>
     </nav>
@@ -119,14 +119,24 @@
 
 
     <h2>@Section</h2>
-    <section>
-        <h3>White section</h3>
-        <p>This will have white background</p>
+    <section class="section">
+        <div class="container container-center">
+            <h1>White section</h1>
+            <p>If you want to get in touch with us about anything, the best way is to drop us a message on our Discourse
+                forum. We'd like to hear from you about anything you think is wrong or missing on the site, requests for
+                new learning topics, requests for help with items you don't understand, or any other questions or
+                concerns.</p>
+        </div>
     </section>
 
-    <section>
-        <h3>Offwhite section</h3>
-        <p>This will have gray background</p>
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>Offwhite section</h1>
+            <p>If you want to get in touch with us about anything, the best way is to drop us a message on our Discourse
+                forum. We'd like to hear from you about anything you think is wrong or missing on the site, requests for
+                new learning topics, requests for help with items you don't understand, or any other questions or
+                concerns.</p>
+        </div>
     </section>
 
 
@@ -137,12 +147,27 @@
 
 
 
-    <footer>
-        <div>Some small heading inside footer</div>
-        <ul>
-            <li>SocialOne</li>
-            <li>SocialTwo</li>
-            <li>SocialThree</li>
+    <footer class="footer">
+        <div class="footer-header">Some small heading inside footer</div>
+        <ul class="social-links list-non-bullet">
+            
+             <li class="list-item-inline">
+                  <a class="link" href="/">
+                    SocialOne
+                </a>
+            </li>
+            
+             <li class="list-item-inline">
+                  <a class="link" href="/">
+                    SocialTwo
+                </a>
+            </li>
+            
+             <li class="list-item-inline">
+                 <a class="link" href="/">
+                    SocialThree
+                </a>
+            </li>
         </ul>
     </footer>
 

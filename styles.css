@@ -2,23 +2,25 @@
 
 :root {
 
-  --primary-color :#a3e635;
-  --dark-gray:  #6b7280;
+    --primary-color: #a3e635;
+    --dark-gray: #6b7280;
+    --off-white:#f3f4f6;
 
 }
 
 
 
 
-body{
+body {
 
     font-family: 'Raleway', sans-serif;
+    margin: 0px;
 
 }
 
-hr{
+hr {
 
-   margin: 3rem 0rem;
+    margin: 3rem 0rem;
 
 }
 
@@ -26,92 +28,92 @@ hr{
 
 .container {
 
-  padding:0rem 1rem;
+    padding: 0rem 1rem;
 
 }
 
 .container-center {
 
-     max-width: 600px;
-     margin: auto;
+    max-width: 600px;
+    margin: auto;
 
 }
 
 /** links **/
 
-.link{
+.link {
 
-    text-decoration:none;
-    padding:0.5rem 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
 
 }
 
 .link-primary {
 
-   background-color: var(--primary-color);
-   border-radius: 0.5rem;
-   color:white
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white
 }
 
-.link-secondary{
+.link-secondary {
 
-    color:var(--primary-color);
+    color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
 
 }
 
-/**look into BEM naming convention for CSS**/ 
+/**look into BEM naming convention for CSS**/
 
 /**lists**/
 
-.list-non-bullet{
+.list-non-bullet {
 
-  list-style: none;
+    list-style: none;
 
 }
 
-.list-item-inline{
+.list-item-inline {
 
- display:inline ;
- padding: 0rem 0.5rem;
+    display: inline;
+    padding: 0rem 0.5rem;
 
 }
 
 /**navigation**/
 
-.navigation{
+.navigation {
 
-   background-color: var(--primary-color);
-   color: white;
-   padding: 1rem;
-   border-bottom-left-radius: 1rem ;
-
-}
-
-.navigation .nav-brand{
-
-     font-weight: bold;
-     
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
 
 }
 
+.navigation .nav-brand {
 
-.navigation .nav-pills{
+    font-weight: bold;
 
-   text-align: right;
 
 }
 
 
+.navigation .nav-pills {
 
-.navigation .link{
-
-   color: white;
+    text-align: right;
 
 }
 
-.navigation .link-active{
+
+
+.navigation .link {
+
+    color: white;
+
+}
+
+.navigation .link-active {
 
     font-weight: bold;
 
@@ -119,33 +121,78 @@ hr{
 
 /**header**/
 
-.hero{
+.hero {
 
-    padding : 2rem;
-    
+    padding: 2rem;
+
 
 }
 
-.hero .hero-img{
+.hero .hero-img {
 
-   max-width: 300px;
-   display :block;
-   margin: auto;
-  
+    max-width: 300px;
+    display: block;
+    margin: auto;
+
 }
 
-.hero .hero-heading{
- 
+.hero .hero-heading {
+
     padding-top: 1rem;
     color: var(--dark-gray);
     text-align: center;
-    
+
 
 }
 
-.hero .hero-heading .heading-inverted{
+.hero .hero-heading .heading-inverted {
 
-   color: var(--primary-color);
+    color: var(--primary-color);
 
 }
 
+/**section**/
+
+.section{
+
+     padding: 2rem;
+
+}
+
+.section h1 {
+
+    text-align: center;
+
+}
+
+.ow{
+
+   background-color: var(--off-white);
+
+
+}
+
+/**footers**/
+
+.footer{
+
+   background-color: var(--primary-color);
+   padding:2rem 1rem;
+   text-align: center;
+   color: white;
+   border-top-right-radius: 1rem;
+
+
+}
+
+.footer .link{
+
+  color: white;
+
+}
+
+.footer .ul{
+
+    padding-inline-start: 0px;
+
+}
