@@ -216,3 +216,14 @@ hr {
     padding-inline-start: 0px;
 
 }
+
+.showcase-list {
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+article {
+    display: block;
+}
