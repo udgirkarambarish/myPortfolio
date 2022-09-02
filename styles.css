@@ -228,3 +228,7 @@ hr {
 article {
     display: block;
 }
+
+li{
+    margin-bottom: 4rem;
+}
