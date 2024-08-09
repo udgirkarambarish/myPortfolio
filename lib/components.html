@@ -1,181 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component Library</title>
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
+    /* background-color: #1b1b32; */
+}
 
+hr {
+    margin: 2rem 0rem;
+}
 
-    <link href="/styles.css" rel="stylesheet" />
+:root {
+    --primary-color: #2E2F41;
+    --off-white: #f3f4f6;
+    --dark-gray: #6B7280;
+}
 
+/* containers */
+.container {
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
+    padding: 0rem 1rem;
+}
 
-</head>
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
 
-<body>
-    <h1> Ishan's component library</h1>
+/* links */
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
 
-    <p>I am attending neogcamp and I want to make a library which would make all my projects look good and consistent.
-    </p>
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+}
 
-    <hr>
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
 
-    <h2>@typography</h2>
+/* BEM naming convention */
 
-    <h1>This is the biggest heading</h1>
-    <h2>This is the second biggest</h2>
-    <p>Let me show you the normal text.This is free flowing and will wrap at the end like a paragraph</p>
-    <p>This paragraph will have a <strong>bold</strong> text</p>
-    <small>This is relatively smaller text</small>
+/* lists */
+.list-non-bullet {
+    list-style: none;
+}
 
-    <hr>
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
 
-    <h2>@container</h2>
+/* navigation */
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
 
-    <h3>fluid container</h3>
-    <div class="container">This is the fluid container and it will go till the end of the page</div>
+.navigation .nav-brand {
+    font-weight: bold;
+    /* font-size: 1.1rem; */
+}
 
-    <h3>center container</h3>
-    <div class="container container-center">This is a centered container and it will go till the specified width</div>
+.navigation .link {
+    color: white;
+}
 
-    <hr>
+.navigation .nav-pills {
+    text-align: right;
+}
 
+.navigation .link-active {
+    font-weight: bold;
+}
 
-    <h2>@Links</h2>
+/* header */
+.hero {
+    padding: 2rem;
+}
 
-    <a class="link link-primary" href="/">Primary Link</a>
-    <a class="link link-secondary" href="/">Secondary Link</a>
+.hero .hero-img {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
 
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--dark-gray);
+}
 
-    <hr>
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
 
+/* sections */
+.section {
+    padding: 2rem;
+}
 
-    <h2>@lists</h2>
+.section h1 {
+    text-align: center;
+}
 
+.ow {
+    background-color: var(--off-white);
+}
 
-    <h3>unordered list </h3>
-    <p>This list will not have the bullet</p>
+/* footer */
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+}
 
-    <ul class="list-non-bullet">
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
+.footer .link {
+    color: white;
+}
 
-    </ul>
+.footer ul {
+    padding-inline-start: 0px;
+}
 
-    <h3>unordered inline list</h3>
-
-    <ul class="list-non-bullet">
-        <li class="list-item-inline">Inline item one</li>
-        <li class="list-item-inline">Inline item two</li>
-        <li class="list-item-inline">Inline item three</li>
-    </ul>
-
-    <h3>reverse ordered list</h3>
-
-    <ol reversed>
-        <li>milk</li>
-        <li>eggs</li>
-        <li>bread</li>
-    </ol>
-
-
-    <hr>
-
-
-    <h2>@nav</h2>
-
-    <nav class="navigation container">
-        <div class="nav-brand">IamBrand</div>
-        <ul class="list-non-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link link-active" href="/">home</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/">products</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/">about</a>
-            </li>
-        </ul>
-    </nav>
-
-
-    <hr>
-
-
-    <h2>@header</h2>
-
-    <header class="hero">
-        <img class="hero-img" src="/images/hero.svg" />
-        <h1 class="hero-heading">adarsh balika the <span class="heading-inverted">web developer</span></h1>
-    </header>
-
-
-
-    <hr>
-
-
-
-    <h2>@Section</h2>
-    <section class="section">
-        <div class="container container-center">
-            <h1>White section</h1>
-            <p>If you want to get in touch with us about anything, the best way is to drop us a message on our Discourse
-                forum. We'd like to hear from you about anything you think is wrong or missing on the site, requests for
-                new learning topics, requests for help with items you don't understand, or any other questions or
-                concerns.</p>
-        </div>
-    </section>
-
-    <section class="section ow">
-        <div class="container container-center">
-            <h1>Offwhite section</h1>
-            <p>If you want to get in touch with us about anything, the best way is to drop us a message on our Discourse
-                forum. We'd like to hear from you about anything you think is wrong or missing on the site, requests for
-                new learning topics, requests for help with items you don't understand, or any other questions or
-                concerns.</p>
-        </div>
-    </section>
-
-
-    <hr>
-
-
-    <h2>@footer</h2>
-
-
-
-    <footer class="footer">
-        <div class="footer-header">Some small heading inside footer</div>
-        <ul class="social-links list-non-bullet">
-            
-             <li class="list-item-inline">
-                  <a class="link" href="/">
-                    SocialOne
-                </a>
-            </li>
-            
-             <li class="list-item-inline">
-                  <a class="link" href="/">
-                    SocialTwo
-                </a>
-            </li>
-            
-             <li class="list-item-inline">
-                 <a class="link" href="/">
-                    SocialThree
-                </a>
-            </li>
-        </ul>
-    </footer>
-
-
-
-
-
-
-</body>
-
-</html>
+/* user agent style sheet */
