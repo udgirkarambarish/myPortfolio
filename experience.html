@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" />
     <title>Experience | Ambarish Udgirkar</title>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -24,7 +26,7 @@
         </ul>
     </nav>
 
-    <header class="hero">
+    <header class="hero" data-aos="fade-up">
         <h1 class="hero-heading">My <span class="heading-inverted">Experience</span></h1>
     </header>
  
@@ -32,7 +34,7 @@
         <section class="exp">
             
             <div class="container container-center">
-                <div class="experience">
+                <div class="experience" data-aos="fade-up" data-aos-delay="100">
                     <h3>Scientist/Engineer Intern</h3>
                     <small>July 2024 – Present</small>
                     <p><strong>National Remote Sensing Centre, ISRO</strong></p>
@@ -45,7 +47,7 @@
             </div>
             
             <div class="container container-center">
-                <div class="experience">
+                <div class="experience" data-aos="fade-up" data-aos-delay="200">
                     <h3>Research and Data Analyst Intern</h3>
                     <small>Aug. 2023 – Feb. 2024</small>
                     <p><strong>Maharashtra State Faculty Development Academy</strong></p>
@@ -80,6 +82,14 @@
             </li>
         </ul>
     </footer>
-    
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Duration of animations in milliseconds
+            once: true, // Whether animation should happen only once
+        });
+    </script>
 </body>
 </html>

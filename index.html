@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home | Ambarish Udgirkar</title>
+    <title>Home | Ambarish Udgirkar</title>
     <link href="styles.css" rel="stylesheet" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
 </head>
+
 
 <body>
 
@@ -26,13 +29,14 @@
         </ul>
     </nav>
 
-    <header class="hero">
-        <img class="hero-img" src="images/undraw_programming_re_kg9v.svg" />
-        <h1 class="hero-heading">Hey! I'm Ambarish, an aspiring <span class="heading-inverted">backend developer</span>
+    <header class="hero" data-aos="fade-up">
+        <img class="hero-img" src="images/undraw_programming_re_kg9v.svg" data-aos="fade-right" />
+        <h1 class="hero-heading" data-aos="fade-left">
+            Hey! I'm Ambarish, an aspiring <span class="heading-inverted">backend developer</span>
         </h1>
     </header>
-
-    <section class="section ow">
+    
+    <section class="section ow" data-aos="fade-up">
         <div class="container container-center">
             <h2>Technologies</h2>
             <p>I'm proficient in the following:</p>
@@ -49,26 +53,24 @@
                         Model Integration</li>
                 </ul>
             </div>
-
-
         </div>
     </section>
-
-    <section class="section">
+    
+    <section class="section" data-aos="fade-up">
         <div class="container container-center">
             <h2>Projects</h2>
             <p>I like to showcase my work, and thus, you can see my projects.</p>
             <a class="link link-primary" href="projects.html" target="_blank">See projects</a>
         </div>
     </section>
-
-    <section class="section ow">
+    
+    <section class="section ow" data-aos="fade-up">
         <div class="container container-center">
             <h2>Experience</h2>
             <p>I have substantial industry experience, explore my work here.</p>
             <a class="link link-secondary" href="experience.html" target="_blank">Explore my experience</a>
         </div>
-    </section>
+    </section>    
 
     <footer class="footer">
         <div class="footer-header">Social Media Presence</div>
@@ -90,6 +92,15 @@
             </li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000, // Duration of animations in milliseconds
+            once: true, // Whether animation should happen only once
+        });
+    </script>
+
 </body>
 
 </html>

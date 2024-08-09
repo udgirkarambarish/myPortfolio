@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" />
     <title>Projects | AMBARISH UDGIRKAR</title>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -24,16 +26,16 @@
         </ul>
     </nav>
 
-    <header class="hero">
+    <header class="hero" data-aos="fade-up">
         <h1 class="hero-heading">See My <span class="heading-inverted">Code</span></h1>
     </header>
 
     <ul class="list-non-bullet">
-        <li>
+        <li data-aos="fade-up" data-aos-delay="100">
             <div class="container container-center">
-                <h1>Rural AI Hub</h1>
+                <h3>Rural AI Hub</h3>
                 <small>March 2024 – June 2024</small>
-                <p>I'm proficient in the following:</p>
+                <br><br>
                 <div class="skills-list">
                     <ul>
                         <li><strong>Project Description:</strong> Designed a centralized platform for Maharashtra government surveys, featuring advanced data analysis and visualization with tiered access controls, improving data accessibility by 40%.</li>
@@ -46,11 +48,11 @@
             </div>
         </li>
 
-        <li>
+        <li data-aos="fade-up" data-aos-delay="200">
             <div class="container container-center">
-                <h1>Enhancing the User Experience</h1>
+                <h3>Enhancing the User Experience</h3>
                 <small>Jan 2024 – May 2024</small>
-                <p>I'm proficient in the following:</p>
+                <br><br>
                 <div class="skills-list">
                     <ul>
                         <li><strong>Project Description:</strong> Improved user experience by analyzing 3000+ session logs, implementing anomaly detection, and reducing user drop-off by 20%.</li>
@@ -58,16 +60,16 @@
                         <li><strong>Technologies:</strong> Python, Scikit-learn, Flask, MongoDB, AWS EC2, Boto3 SDK, GitHub, RestAPI, PowerBi, JavaScript.</li>
                     </ul>
                 </div>
-                <br>
+                <br><br>
                 <a class="link link-secondary" href="https://github.com/udgirkarambarish/User-Behavior-Analysis" target="_blank">View Source</a>
             </div>
         </li>
 
-        <li>
+        <li data-aos="fade-up" data-aos-delay="300">
             <div class="container container-center">
-                <h1>Phishing Link Detection System</h1>
+                <h3>Phishing Link Detection System</h3>
                 <small>Sep 2023 – Dec 2023</small>
-                <p>I'm proficient in the following:</p>
+                <br><br>
                 <div class="skills-list">
                     <ul>
                         <li><strong>Project Description:</strong> Engineered a multi-layered phishing detection system with a three-tier approach, increasing detection accuracy by 25%.</li>
@@ -85,7 +87,7 @@
                 <a class="link link-secondary" href="https://github.com/udgirkarambarish/Phishing-Link-Detection" target="_blank">View Source</a>
             </div>
         </li>
-
+        
         <!-- Existing projects can be re-added here if needed -->
 
     </ul>
@@ -110,6 +112,14 @@
             </li>
         </ul>
     </footer>
-    
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Duration of animations in milliseconds
+            once: true, // Whether animation should happen only once
+        });
+    </script>
 </body>
 </html>

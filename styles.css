@@ -6,8 +6,23 @@
     --dark-gray: #6B7280;    /* Provided dark gray color */
 }
 
+h3 {
+    font-size: 30px;
+    text-decoration-line: underline;
+    margin-bottom: 1%;
+}
 
+p {
+    font-size: large;
+}
 
+small {
+    font-size: 18px;
+}
+
+strong {
+    font-size: 20px;
+}
 
 body {
 
@@ -262,4 +277,8 @@ li{
 
 .exp {
     padding-bottom: 2rem;
+}
+
+.place {
+    margin-top: 1%;
 }
