@@ -132,8 +132,8 @@ hr {
 
 .hero {
 
-    padding: 2rem;
-    padding-top: 5rem ;
+    padding: 1rem;
+    padding-top: 1rem ;
 }
 
 .hero .hero-img {
@@ -146,7 +146,7 @@ hr {
 
 .hero .hero-heading {
 
-    padding-top: 1rem;
+    padding-top: 0rem;
     color: var(--dark-gray);
     text-align: center;
 
@@ -183,38 +183,38 @@ hr {
 
 }
 
-/**footers**/
+/** footers **/
 
-.footer{
-
-   background-color: var(--primary-color);
-   padding:2rem 1rem;
-   text-align: center;
-   color: white;
-   border-top-right-radius: 1rem;
-   border-top-left-radius: 1rem;
-
-
-}
-
-.footer .link{
-
-  color: white;
-
-}
-
-.footer .footer-header{
-
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center; /* Center text within the footer */
+    color: white;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+ }
+ 
+ .footer .link {
+    color: white;
+ }
+ 
+ .footer .footer-header {
     font-weight: bold;
     font-size: large;
-
-}
-
-.footer .ul{
-
-    padding-inline-start: 0px;
-
-}
+    margin-bottom: 1rem; /* Optional: Add spacing below the header */
+ }
+ 
+ .footer ul {
+    padding-inline-start: 0; /* Remove default list padding */
+    list-style-type: none; /* Remove default list bullets */
+    text-align: center; /* Center align list items */
+ }
+ 
+ .footer li {
+    display: inline; /* Make list items inline */
+    margin: 0 1rem; /* Optional: Add spacing between list items */
+ }
+ 
 
 .showcase-list {
     padding: 2rem;
@@ -244,4 +244,22 @@ li{
 
 .skills-list li {
     margin-bottom: 8px; /* Adjust spacing between items if needed */
+}
+
+/* Add these styles or update existing ones */
+/* Reduce spacing around list items */
+
+.experience ul {
+    padding-left: 20px; /* Adjust left padding as needed */
+    margin-bottom: 20px; /* Adjust bottom margin for spacing between sections */
+}
+
+.experience li {
+    margin-bottom: 10px; /* Adjust spacing between list items */
+}
+
+/* Experience bottom spacing */
+
+.exp {
+    padding-bottom: 2rem;
 }
