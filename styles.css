@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 :root {
-
-    --primary-color: #0ea5e9;
-    --dark-gray: #6b7280;
-    --off-white:#f3f4f6;
-
+    --primary-color: #2E2F41; /* Provided primary color */
+    --off-white: #f3f4f6;    /* Provided off-white color */
+    --dark-gray: #6B7280;    /* Provided dark gray color */
 }
 
 
@@ -233,4 +231,17 @@ article {
 
 li{
     margin-bottom: 4rem;
+}
+
+.skills-list {
+    text-align: center;
+}
+
+.skills-list ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.skills-list li {
+    margin-bottom: 8px; /* Adjust spacing between items if needed */
 }
