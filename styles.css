@@ -6,15 +6,12 @@
     --dark-gray: #6B7280;    /* Provided dark gray color */
 }
 
-h1 {
-    text-align: center;
-}
-
 h3 {
     font-size: 30px;
     text-decoration-line: underline;
     margin-bottom: 1%;
-    text-align: center;
+    margin-top: 1%;
+    text-align: left;
 
 }
 
@@ -118,12 +115,15 @@ hr {
 
 .hero {
     padding: 1rem;
-    padding-top: 1rem;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    text-align: center;
 }
 
 .hero .hero-img {
     max-width: 400px;
     display: block;
+    padding-top: 1rem;
     margin: auto;
 }
 
@@ -222,11 +222,21 @@ hr {
 /**section**/
 
 .section {
-    padding: 2rem;
-    margin: 2rem 0;
+    padding: 1rem;
+    padding-bottom: 2%;
+    padding-top: 1%;
+    margin: 1rem 0;
     border-radius: 1rem;
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.project-padding {
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    padding-top: 0%
+    
 }
 
 .section h1 {
@@ -286,9 +296,9 @@ li {
     margin-bottom: 4rem;
 }
 
-.skills-list {
+/* .skills-list {
     text-align: center;
-}
+} */
 
 .skills-list ul {
     display: inline-block;
