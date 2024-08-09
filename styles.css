@@ -6,10 +6,16 @@
     --dark-gray: #6B7280;    /* Provided dark gray color */
 }
 
+h1 {
+    text-align: center;
+}
+
 h3 {
     font-size: 30px;
     text-decoration-line: underline;
     margin-bottom: 1%;
+    text-align: center;
+
 }
 
 p {
@@ -134,6 +140,7 @@ hr {
     font-family: 'Raleway', sans-serif;
     position: relative;
     z-index: 1;
+    /* text-align: center; */
 }
 
 .hero .hero-heading .heading-inverted {
@@ -219,6 +226,7 @@ hr {
     margin: 2rem 0;
     border-radius: 1rem;
     text-align: center;
+    margin-top: 1.5rem;
 }
 
 .section h1 {
